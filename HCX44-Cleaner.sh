@@ -153,6 +153,7 @@ while test $# -gt 0; do
             # Delete if more than 1 GB
             rm -rf /common/zookeeper-db/*; 
             rm -rf /common/kafka-db/*;
+            rm -rf /common/logs/zookeeper/*;
             print_header ${bcolors[OKCYAN]} "" "Starting Services";
             Service_Management start;
             exit 0
